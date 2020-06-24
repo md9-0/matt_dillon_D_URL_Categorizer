@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Modify Whitelist</h1>
+    <p class="lead">Submit your URL in the appropriate box below</p>
+  <hr class="my-4">
+  <form class="form" method="POST" action="/submit">
+    <div class="input-group">
+      <input type="text" class="form-control form-control-lg" placeholder="Enter URL to ADD to whitelist" name="wlsite">
+      <div class="input-group-append" id="button-addon4">
+        <button class="btn btn-primary btn-lg" type="submit">Add to Whitelist</button>
+      </div>
+    </div>
+  </form>
+  <hr>
+  <form class="form" method="POST" action="/submit">
+    <div class="input-group">
+      <input type="text" class="form-control form-control-lg" placeholder="Enter URL to REMOVE from whitelist" name="remwlsite">
+      <div class="input-group-append" id="button-addon4">
+        <button class="btn btn-secondary btn-lg" type="submit">Remove From Whitelist</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<h2>Whitelist:</h2>
+<div class="overflow-auto mb-3 mb-md-0 mr-md-3" style="max-height: 450px;">     
+<table class="table table-hover">
+    <tbody>
+      {% for url in wl %}
+        <tr>
+            <td>{{ url }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+{% endblock %}

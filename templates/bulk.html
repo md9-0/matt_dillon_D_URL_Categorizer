@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- ugly as sin circle back to -->
+<div class="jumbotron">
+	<h1 class="display-4">Bulk add to the Whitelist with a CSV file </h1>
+		<p class="lead">Upload a CSV File with your desired URLs in the first column to add to the whitelist.</p>
+	<hr class="my-4">
+	<center>
+		<form method=post enctype=multipart/form-data>
+			<!-- figure out styling later <label class="btn btn-primary btn-lg"></label> -->
+				Choose <input type="file" name="wl_upload"/>
+			<input type=submit value=Upload>
+			Upload your file</form>
+	</center>
+</div>
+
+<div class="jumbotron">
+	<h1 class="display-4">Bulk add categorization and WL status </h1>
+		<p class="lead">Upload a CSV File with your desired URLs in the first column, file will be updated columns for with primary Webshrinker categories and Whitelist Validation</p>
+	<hr class="my-4">
+	<center>
+		<form method=post enctype=multipart/form-data>
+			<input type="file" name="append_upload"/>
+				</label>
+			<input type=submit value=Upload>
+			Upload your file</form>
+	</center>
+</div>
+
+<!-- Jumbotron -->
+
+
+{%endblock%}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<meta http-equiv="refresh" content="3;url=./whitelist" />
+<div class="jumbotron">
+  <h1 class="display-4"><strong>
+  {% if user_url == None %}
+  {{user_url_rem}}
+  {% else %}
+  {{user_url}}
+  {% endif %}
+</strong> {{status}}</h1>
+  <hr class="my-4">
+  <h2>You will be redirected in a few moments...</h2>
+  {{check2}}
+</div>
+{% endblock %}

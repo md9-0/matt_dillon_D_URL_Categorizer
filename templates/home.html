@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+	<h1 class="display-4">Categorize your URL</h1>
+		<p class="lead">Submit your URL Below to generate classification table via the Webshrinker API</p>
+	<hr class="my-4">
+	<form class="form" method="POST">
+		<div class="input-group">
+			<input type="text" class="form-control form-control-lg" placeholder="Enter URL e.g., www.espn.com" name="text">
+			<div class="input-group-append" id="button-addon4">
+				<button class="btn btn-primary btn-lg" type="submit">Submit URL</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+
+{% if fail == True %}
+	<div class="alert alert-danger" role="alert">
+		<strong>{{site}}</strong> resulted in an API Error! Try a Different URL.
+		<hr>
+		{{error_msg}}
+	</div>
+{% elif wl_valid == True %}
+	<div class="alert alert-success" role="alert">
+	Good News, <strong>{{site}}</strong> is on the <a href=/whitelist>whitelist</a>!
+	</div>
+{% elif wl_valid == False %}
+	<div class="alert alert-danger" role="alert">
+	<!-- ask how to set up a route that auto adds the url to the WL via hyperlink -->
+		Be careful, <strong>{{site}}</strong> is not the <a href=/whitelist>whitelist</a>!
+	</div>
+{% else %}
+	<div class="alert alert-secondary" role="alert">
+	The table below will populate upon submission.</div>
+{% endif %}
+
+<table class="table table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th>{{site}} Categories</th>
+            <th>Score</th>
+            <th>IAB Category</th>
+            <th>Confident</th>
+        <tr>
+    </thead>
+    <tbody>
+    	{% for each in cats %}
+        <tr>
+            <td>{{ each["label"] }}</td>
+            <td>{{ "%.2f"|format (each["score"] | float) }}</td>
+            <td>{{ each["id"] }}</td>
+            <td>{{ each["confident"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+
+
+

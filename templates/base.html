@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-9/chHLTCcBULgxOFoUyZXSgEF0uFXs+NrQqzcy/DXqcR+Sk8C1l4EgmUXAEzTb92" crossorigin="anonymous">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/app.css') }}"/> -->
+		<title>{% block title %}URL Categorizer{% endblock %}</title>
+	</head><!-- head -->
+	<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">
+    <i class="icon-cogs"></i> Website Lookup Tool
+  </a>
+<!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+ -->    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="/whitelist">Modify Whitelist</a>
+      <a class="nav-item nav-link" href="/bulk">Batch Processes</a>
+      <a class="nav-item nav-link" href="/about">About</a>
+    </div>
+<!--   </div>
+ --></nav>
+		<div class="container">
+		  	{% block content %}
+    		{% endblock %}
+		</div>
+
+	</body><!-- body -->
+</html>
+

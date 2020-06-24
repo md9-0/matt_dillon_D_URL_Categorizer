@@ -1,0 +1,53 @@
+url,category_id,label,parent
+espn.com,IAB17,Sports,IAB17
+espn.com,IAB17-1,Auto Racing,IAB17
+twitter.com,IAB14,Society,IAB14
+twitter.com,IAB14-WS1,Social Networking,IAB14
+amc.com,IAB1,Arts & Entertainment,IAB1
+amc.com,IAB1-7,Television & Video,IAB1
+nascar.com,IAB17,Sports,IAB17
+nascar.com,IAB17-22,NASCAR Racing,IAB17
+nascar.com,IAB17-1,Auto Racing,IAB17
+test99.com,IAB5,Education,IAB5
+test99.com,IAB5-11,Homework/Study Tips,IAB5
+tarantino.com,IAB21,Real Estate,IAB21
+tarantino.com,IAB21-3,Buying / Selling Homes,IAB21
+wwf.com,IAB25,Non-Standard Content,IAB25
+wwf.com,IAB25-3,Adult Content,IAB25
+espn.com,IAB17,Sports,IAB17
+espn.com,IAB17-1,Auto Racing,IAB17
+nfl.com,IAB17,Sports,IAB17
+nfl.com,IAB17-12,American Football,IAB17
+amc.com,IAB1,Arts & Entertainment,IAB1
+amc.com,IAB1-7,Television & Video,IAB1
+amc.com,IAB1,Arts & Entertainment,IAB1
+amc.com,IAB1-7,Television & Video,IAB1
+pinterest.com,IAB19,Technology & Computing,IAB19
+pinterest.com,IAB14,Society,IAB14
+pinterest.com,IAB14-WS1,Social Networking,IAB14
+pinterest.com,IAB19-WS4,File Sharing,IAB19
+subway.com,IAB8,Food & Drink,IAB8
+subway.com,IAB8-7,Cuisine-Specific,IAB8
+wwf.com,IAB25,Non-Standard Content,IAB25
+wwf.com,IAB25-3,Adult Content,IAB25
+pinterest.com,IAB19,Technology & Computing,IAB19
+pinterest.com,IAB14,Society,IAB14
+pinterest.com,IAB14-WS1,Social Networking,IAB14
+pinterest.com,IAB19-WS4,File Sharing,IAB19
+subway.com,IAB8,Food & Drink,IAB8
+subway.com,IAB8-7,Cuisine-Specific,IAB8
+wwf.com,IAB25,Non-Standard Content,IAB25
+wwf.com,IAB25-3,Adult Content,IAB25
+mlb.com,IAB17,Sports,IAB17
+mlb.com,IAB17-2,Baseball / Softball,IAB17
+mlb.com,IAB17,Sports,IAB17
+mlb.com,IAB17-2,Baseball / Softball,IAB17
+redsox.com,IAB17,Sports,IAB17
+redsox.com,IAB17,Sports,IAB17
+google.com,IAB19-35,Web Search,IAB19
+google.com,IAB19,Technology & Computing,IAB19
+reddit.com,IAB25-1,Unmoderated UGC / Message Boards,IAB25
+reddit.com,IAB25,Non-Standard Content,IAB25
+reddit.com,IAB12,News / Weather / Information,IAB12
+mlb.com,IAB17,Sports,IAB17
+mlb.com,IAB17-2,Baseball / Softball,IAB17
